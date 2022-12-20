@@ -1,0 +1,112 @@
+Source: haskell-hxt-regex-xmlschema
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders:
+ TANIGUCHI Takaki <takaki@debian.org>,
+ Clint Adams <clint@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8.4.3),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+ libghc-hxt-charproperties-dev (<< 10),
+ libghc-hxt-charproperties-dev (>= 9),
+ libghc-hxt-charproperties-prof,
+Build-Depends-Indep:
+ ghc-doc,
+ libghc-hxt-charproperties-doc,
+Standards-Version: 4.5.0
+Homepage: http://www.haskell.org/haskellwiki/Regular_expressions_for_XML_Schema
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-hxt-regex-xmlschema
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-hxt-regex-xmlschema]
+
+Package: libghc-hxt-regex-xmlschema-dev
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: W3C XML Schema regular expressions library${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ This library supports full W3C XML Schema regular expressions
+ inclusive all Unicode character sets and blocks.
+ The complete grammar can be found under
+ <http://www.w3.org/TR/xmlschema11-2/#regexs>.
+ It is implemented by the technique of derivations of regular expressions.
+ The W3C syntax is extended to support not only union of regular sets,
+ but also intersection, set difference, exor.
+ Matching of subexpressions is also supported.
+ The library can be used for constricting lightweight scanners and tokenizers.
+ It is a standalone library, no external regex libraries are used.
+ This package is a substitute for the old regex-xmlschema package.
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-regex-xmlschema-prof
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: W3C XML Schema regular expressions library${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ This library supports full W3C XML Schema regular expressions
+ inclusive all Unicode character sets and blocks.
+ The complete grammar can be found under
+ <http://www.w3.org/TR/xmlschema11-2/#regexs>.
+ It is implemented by the technique of derivations of regular expressions.
+ The W3C syntax is extended to support not only union of regular sets,
+ but also intersection, set difference, exor.
+ Matching of subexpressions is also supported.
+ The library can be used for constricting lightweight scanners and tokenizers.
+ It is a standalone library, no external regex libraries are used.
+ This package is a substitute for the old regex-xmlschema package.
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-regex-xmlschema-doc
+Architecture: all
+Section: doc
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: W3C XML Schema regular expressions library${haskell:ShortBlurb}
+ This is a part of Haskell XML Toolbox.
+ .
+ This library supports full W3C XML Schema regular expressions
+ inclusive all Unicode character sets and blocks.
+ The complete grammar can be found under
+ <http://www.w3.org/TR/xmlschema11-2/#regexs>.
+ It is implemented by the technique of derivations of regular expressions.
+ The W3C syntax is extended to support not only union of regular sets,
+ but also intersection, set difference, exor.
+ Matching of subexpressions is also supported.
+ The library can be used for constricting lightweight scanners and tokenizers.
+ It is a standalone library, no external regex libraries are used.
+ This package is a substitute for the old regex-xmlschema package.
+ .
+ ${haskell:Blurb}
